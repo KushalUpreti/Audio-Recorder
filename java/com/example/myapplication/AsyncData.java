@@ -28,7 +28,6 @@ public class AsyncData  {
             @Override
             public void run() {
                 fetchData(path);
-
                 callback.onDownloadComplete(arrayList);
             }
         });
