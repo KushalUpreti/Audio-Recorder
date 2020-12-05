@@ -71,6 +71,7 @@ public class RecordFragment extends Fragment {
             if (recorder != null) {
                 myRecorder = recorder;
             }
+
             if (isRecording) {
                 myRecorder.resume();
                 animateButton(pauseButton,true);

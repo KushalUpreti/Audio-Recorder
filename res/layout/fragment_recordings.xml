@@ -7,19 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".RecordingsFragment">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/content_desc_timer"
-        android:fontFamily="@font/cabin"
-        android:text="Work in progress\n           😁😁"
-        android:textColor="#F31111"
-        android:textColorHighlight="#FFFFFF"
-        android:textSize="36sp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19999999" />
+        tools:listitem="@layout/recycleritem" />
 </androidx.constraintlayout.widget.ConstraintLayout>
