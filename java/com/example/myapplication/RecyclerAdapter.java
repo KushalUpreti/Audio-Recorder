@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,10 +13,15 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder>{
+    interface OnItemClick{
+        void OnItemClickListener(Recordings recordings);
+    }
     private ArrayList<Recordings> arrayList = null;
+    public OnItemClick callback;
 
-    public RecyclerAdapter(ArrayList<Recordings> arrayList) {
+    public RecyclerAdapter(ArrayList<Recordings> arrayList,OnItemClick callback) {
         this.arrayList = new ArrayList<>(arrayList);
+        this.callback = callback;
     }
 
     @NonNull
@@ -34,19 +40,17 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         String audioName = arrayList.get(position).getFileName();
         holder.audioName.setText(audioName);
-        String audioDuration = arrayList.get(position).getDuration();
-        double duration = Double.parseDouble(audioDuration)/1000f;
-        NumberFormat numberFormat = NumberFormat.getNumberInstance();
-        numberFormat.setMaximumFractionDigits(2);
-        String durationAudio =  numberFormat.format(duration);
-        holder.audioDuration.setText(durationAudio+" min");
+        String durationAudio =  arrayList.get(position).getDuration();
+        holder.audioDuration.setText(durationAudio);
         String dateCreated = arrayList.get(position).getDateCreated();
         holder.dateCreated.setText(dateCreated);
         String size = arrayList.get(position).getFileSize();
         holder.size.setText(size);
     }
 
-    static class ViewHolder extends RecyclerView.ViewHolder{
+
+
+     class ViewHolder extends RecyclerView.ViewHolder implements View.OnCreateContextMenuListener{
         TextView audioName;
         TextView audioDuration;
         TextView dateCreated;
@@ -54,14 +58,34 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
             audioName = itemView.findViewById(R.id.audioName);
             audioDuration = itemView.findViewById(R.id.audioDuration);
             dateCreated = itemView.findViewById(R.id.dateCreated);
             size = itemView.findViewById(R.id.size);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Recordings recordings = arrayList.get(getAdapterPosition());
+                    callback.OnItemClickListener(recordings);
+                }
+            });
         }
-    }
+
+         @Override
+         public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+
+         }
+     }
+
+
 
     public void setArrayList(ArrayList<Recordings> arrayList){
         this.arrayList = arrayList;
+    }
+
+    public void clear(){
+        this.arrayList.clear();
     }
 }
