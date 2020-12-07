@@ -12,6 +12,7 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -56,7 +57,9 @@ public class RecordingsFragment extends Fragment implements AsyncData.OnDataDown
 
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter = new RecyclerAdapter(arrayList,this);
+        registerForContextMenu(recyclerView);
+        FragmentManager manager = getParentFragmentManager();
+        adapter = new RecyclerAdapter(arrayList,this, manager,getContext());
         recyclerView.setAdapter(adapter);
     }
 
