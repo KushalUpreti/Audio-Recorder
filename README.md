@@ -10,7 +10,7 @@ The app's features are listed below:
 
 The app survives configuration changes even when it is recording or playing an audio. Meaning that the audio recording or playing won't stop even if the device is rotated.
 
-Screenshots of the project:
+Screenshots of the project: <br/>
 The images do not appear for some reason so reloading should do the trick.
 
 | Recorder Fragment | Recording Audio |
