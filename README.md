@@ -15,15 +15,15 @@ The images do not appear for some reason so reloading should do the trick.
 
 | Recorder Fragment | Recording Audio |
 |--|--|
-| <a href="https://drive.google.com/uc?export=view&id=1aBn5tY_jMSSY1bR5e79lycEXQTF2Bpk4">![Diary](https://drive.google.com/uc?export=view&id=1aBn5tY_jMSSY1bR5e79lycEXQTF2Bpk4) </a> | <a href="https://drive.google.com/uc?export=view&id=1jbzM-W4OZpuWymSCl_iR6qcp1x4CPWJz">![Attendance](https://drive.google.com/uc?export=view&id=1jbzM-W4OZpuWymSCl_iR6qcp1x4CPWJz)</a> |
+| <a href="https://drive.google.com/uc?export=view&id=1aBn5tY_jMSSY1bR5e79lycEXQTF2Bpk4">![Recorder](https://drive.google.com/uc?export=view&id=1aBn5tY_jMSSY1bR5e79lycEXQTF2Bpk4) </a> | <a href="https://drive.google.com/uc?export=view&id=1jbzM-W4OZpuWymSCl_iR6qcp1x4CPWJz">![Recording](https://drive.google.com/uc?export=view&id=1jbzM-W4OZpuWymSCl_iR6qcp1x4CPWJz)</a> |
 
 | Saved Recordings| Recording Options|
 |--|--|
-| <a href="https://drive.google.com/uc?export=view&id=1PB_1tx2yVliNbT39KtkI_KtC038To7YS">![Time Table](https://drive.google.com/uc?export=view&id=1PB_1tx2yVliNbT39KtkI_KtC038To7YS) </a> | <a href="https://drive.google.com/uc?export=view&id=1NGNFqpKpmmWEudTypy4ZNAZaQisotRnn">![Grades](https://drive.google.com/uc?export=view&id=1NGNFqpKpmmWEudTypy4ZNAZaQisotRnn)</a> |
+| <a href="https://drive.google.com/uc?export=view&id=1PB_1tx2yVliNbT39KtkI_KtC038To7YS">![Saved Recordings](https://drive.google.com/uc?export=view&id=1PB_1tx2yVliNbT39KtkI_KtC038To7YS) </a> | <a href="https://drive.google.com/uc?export=view&id=1NGNFqpKpmmWEudTypy4ZNAZaQisotRnn">![Options](https://drive.google.com/uc?export=view&id=1NGNFqpKpmmWEudTypy4ZNAZaQisotRnn)</a> |
 
 
 | Play Recording| Settings Fragment|
 |--|--|
-| <a href="https://drive.google.com/uc?export=view&id=1CuvGeZT_UqfNIXPQsb1JgysKifPO7Fi3">![Time Table](https://drive.google.com/uc?export=view&id=1CuvGeZT_UqfNIXPQsb1JgysKifPO7Fi3) </a> | <a href="https://drive.google.com/uc?export=view&id=1F9nmrUN2J6UR1gxTLusxVipYbze_Zkmz">![Grades](https://drive.google.com/uc?export=view&id=1F9nmrUN2J6UR1gxTLusxVipYbze_Zkmz)</a> |
+| <a href="https://drive.google.com/uc?export=view&id=1CuvGeZT_UqfNIXPQsb1JgysKifPO7Fi3">![Play Recordings](https://drive.google.com/uc?export=view&id=1CuvGeZT_UqfNIXPQsb1JgysKifPO7Fi3) </a> | <a href="https://drive.google.com/uc?export=view&id=1F9nmrUN2J6UR1gxTLusxVipYbze_Zkmz">![Settings](https://drive.google.com/uc?export=view&id=1F9nmrUN2J6UR1gxTLusxVipYbze_Zkmz)</a> |
 
 Thank you for checking out the project!!
